@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #191f36;
+    --text-color: #fff;
+    --snd-bf-color: #262B40;
+    --main-color: #59B2F4;
+
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 9%;
+    gap: 2rem; /* space between text and image */
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-img img {
+    width: 25vw;
+    height: auto;
+    border-radius: 50%; /* makes the image round */
+    object-fit: cover;
+    border: 0.5rem solid var(--main-color); /* optional: adds border to the image */
+    animation: floatImage 4s ease-in-out infinite; /* makes the image float */
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(2.4rem); /* adjust the value to control the float height */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    cursor: default;
+}
+
+/* .navbar a:hover,
+.navbar a.active{
+    color: var(--text-color);
+} */
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+}
+
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display:none;
+}
+
+.home{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+
+}
+
+
+.home-content p{
+    font-size: 1.6rem;
+}
+
+
+.home-sci {
+    margin-top: 20px;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+}
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    transition: 0.5s;
+}
+
+
+/* .btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    box-shadow: 0 0 1rem var(--main-color);
+    color: var(--text-color);
+    letter-spacing: .1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 4rem;
+    margin-top: 2rem;
+    transition: .5s ease;
+} */
+ .btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background: #0ef;
+    color: black;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  /* Hover effect on button */
+  .btn :hover {
+    background: #00d9d9;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #0ef;
+  } 
+
+.about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--snd-bf-color);
+}
+
+.about-img img{
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.heading{
+    text-align: center;
+    font-size:4.5rem;
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p{
+    font-size:1.6rem;
+    margin: 2rem 0 3rem;
+}
+  
+
+/*breakpoint*/
+@media (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% ;
+    }
+    .services{
+        padding: 7rem;
+    }
+
+    .portfolio{
+        padding-bottom: 7rem;
+    }
+    .contact{
+        min-height: auto;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+ 
+@media (max-width: 768px) {
+    #menu-icon{
+        display:block
+    
+}
+
+.navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    display: none;
+}
+
+.navbar :active{
+    display: block;
+}
+
+.navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+
+    .home{
+        flex-direction: column;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-content{
+        order: 2;
+    }
+    .home-img img{
+        width: 50vw;
+        margin-top: 4rem;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-img img{
+        width: 90vw;
+        margin-top: 4rem;
+    }
+    .services h2{
+        margin-bottom:3rem;
+    }
+    .portfolio h2{
+        margin-bottom: 3rem;
+    }
+    .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 617px){
+    .portfolio-container{
+        grid-template-columns: 1fr;
+    }
+    .home-img img {
+        width: 40vw; /* or try 35vw to make it more compact */
+        margin-top: 6rem;
+    }
+    .about-img img{
+        width: 100vw;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+    .contact form .input-box .input{
+        width: 100%;
+    }
+}
+
+
+/* Default navbar (Desktop version) */
+.navbar {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Menu icon hidden on desktop */
+#menu-icon {
+  display: none;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .navbar {
+    display: none; /* Hide navbar by default */
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #1d1b31;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .navbar.active {
+    display: flex; /* Show navbar when active */
+  }
+}

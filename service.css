@@ -1,0 +1,113 @@
+/* .services h2{
+    margin-bottom: 5rem;
+}
+
+.services .box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.services-container .services-box{
+    flex: 1 1 30rem;
+    background: var(--snd-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.services-container .services-box:hover{
+    transform: scale(1.02);
+    border-color: var(--main-color);
+    
+}
+
+.services-box i{
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.services-box h3{
+    font-size: 2.6rem;
+}
+
+.services-box p{
+    font-size:1.6rem;
+    margin: 1rem 0 3rem;
+} */
+
+.services {
+    padding: 5rem 9%;
+    background: var(--primary-bg-color); /* dark background */
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.services-box {
+    background: #182f4b; /* card color */
+    flex: 1 1 28rem;
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    border: 1px solid #2c2f34;
+    transition: 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.services-box:hover {
+    transform: translateY(-10px);
+    border-color: #0ef;
+}
+
+.services-box i {
+    font-size: 6rem;
+    color: #0ef;
+    margin-bottom: 2rem;
+}
+
+.services-box h3 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.services-box p {
+    font-size: 1.6rem;
+    color: #ccc;
+    margin-bottom: 3rem;
+}
+
+.services-box .btn {
+    display: inline-block;
+    padding: 0.8rem 2.5rem;
+    background: transparent;
+    border: 2px solid #0ef;
+    color: #0ef;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+
+.services-box .btn:hover {
+    background: #0ef;
+    color: #364d69;
+    box-shadow: 0 0 20px #0ef;
+}
